@@ -43,7 +43,7 @@
     
   }
   .experience-background{
-            background: rgba(0, 0, 0, 40%);
+            background: rgba(0, 0, 0, 10%);
                 position: absolute;
     top: 0;
     left: 0;
@@ -234,7 +234,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-      background: rgba(0, 0, 0, 40%);
+      background: rgba(0, 0, 0, 10%);
     border-radius: 15px; /* Border radius */
     z-index: -1; /* Ensure it is behind the hero content */
     animation: parallax 10s infinite linear; /* Parallax scrolling effect */
