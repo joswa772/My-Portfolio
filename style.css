@@ -106,7 +106,7 @@
   display: none;
   font-size: 24px;
   color: white;
-  cursor: pointer;
+   cursor: none;
 }
 
 
@@ -252,6 +252,7 @@
        margin: 0px;
        animation: zoomIn 2s ease forwards;
        position: relative;
+       box-shadow:  -17px 20px 30px -10px rgb(0 0 0 / 44%);
    } 
 
   .hero h1 {
@@ -395,7 +396,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     transition: var(--transition);
-    cursor: pointer;
+     cursor: none;
     margin: -10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
@@ -467,7 +468,7 @@ margin: 20px;
     padding: 1.5rem;
     border-radius: 0.5rem;
     transition: var(--transition);
-    cursor: pointer;
+     cursor: none;
     display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -754,7 +755,7 @@ margin: 20px;
     border-radius: 50%;
     display: inline-block;
     text-decoration: none;
-    cursor: pointer;
+     cursor: none;
     pointer-events: auto;
   }
   
@@ -848,7 +849,7 @@ padding: 0 1.5rem;
       padding: 1.5rem;
       border-radius: 0.5rem;
       transition: var(--transition);
-      cursor: pointer;
+       cursor: none;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
 }
