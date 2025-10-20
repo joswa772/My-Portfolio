@@ -4,7 +4,16 @@
     * {
   box-sizing: border-box;
 }
-
+section-header h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+    skills-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+}
 
 body, html {
   margin: 0;
@@ -69,7 +78,7 @@ html {
         padding: 0 1.5rem;
     }
     section {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
     /* .menu-icon::before,*/
     /* .menu-icon::after,  */
@@ -210,10 +219,12 @@ html {
         margin-top: 4.5rem;
         margin-bottom: -2rem;
         display: flex;
-
     }
-    
-
+    .project-content {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
     .hero {
         padding: 4rem 1rem;
         min-height: 100vh;
@@ -338,14 +349,24 @@ html {
     .contact-links a {
         text-align: center;
     }
+    .skills-box p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+    skills-box h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
     .skills-box {
     background: rgb(255 250 250 / 4%);
-padding: 1rem;
+padding: 0.8rem;
 border-radius: 0.5rem;
 transition: var(--transition);
 cursor: pointer;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+    
 /* Responsive for mobile */
 
   .tools-header {
@@ -400,8 +421,9 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 .experience-card {
     background: rgb(20 21 23 / 50%);
-    padding: 2rem;
+    padding: 1.3rem;
     border-radius: 0.5rem;
+    display: flex;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
