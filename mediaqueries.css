@@ -11,11 +11,14 @@
     gap: 10px;
     justify-content: center;
 }
+.section-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 body, html {
   margin: 0;
   padding: 0;
-  cursor:none;
   overflow-x: hidden;
 }
 
@@ -34,6 +37,42 @@ body, html {
   transition: all 0.3s ease;
   pointer-events: auto;
 }
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: -0.5rem;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 2.5s ease forwards;
+  }
+  .hero h3{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: -0.8rem;
+    transform: translateY(15px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    color: #c4c4c4;
+  }
+  .hero h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 3.5s ease forwards;
+    color: #d4c88e;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    margin-right: 1%;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 4.5s ease forwards 0.2s;
+    color: #c4c4c4;
+  }
 
 
 .social-links a:hover .hero-social-svg {
@@ -166,6 +205,9 @@ html {
     .section {
         padding: 2rem 0;
     }
+    .skill-card h3 {
+    margin-bottom: 0rem;
+    }
     
     .hero {
         padding: 4rem 1rem;
@@ -181,7 +223,13 @@ html {
         border-radius: 1.5rem;
         transition: var(--transition);
          cursor: none;
-        margin: 15px;
+        margin: 10px;
+    }
+
+    .skills-box h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: white;
     }
 
     .hero-background{
@@ -293,11 +341,18 @@ html {
     .contact-container {
         padding: 2rem 1rem;
     }
-     .experience-container{
-        padding: 1rem 1rem;
-            background:transparent;
-            border-radius: 0px;
-     }
+
+    .experience-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+      background: rgba(0, 0, 0, 35%);
+    border-radius: 15px; /* Border radius */
+    z-index: -1; /* Ensure it is behind the hero content */
+    animation: parallax 10s infinite linear; /* Parallax scrolling effect */
+  }
 
     .about-content{
         animation: fadeInUp 5.5s ease forwards
@@ -372,6 +427,24 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .tools-grid {
     gap: 1rem;
+    margin:0;
+    grid-template-columns: 1fr 1.5fr;
+    display:grid;
+    align-items:center;
+    
+    }
+    .tools-card {
+        /* min-width: 90px;
+        max-width: 120px; */
+        padding: 0rem;
+    }
+    .tools-section p {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
 
   }
     .container,
@@ -380,7 +453,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     .project-container,
     .contact-container,
     .certification-container {
-        margin: 0 !important;
+        margin: 20px !important;
         padding: 1rem 0 !important;
         max-width: 100vw !important;
         width: 90vw !important;
@@ -418,13 +491,34 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 .experience-card {
     background: rgb(20 21 23 / 50%);
-    padding: 1.3rem;
+    padding: 1.2rem;
     border-radius: 0.5rem;
-    display: flex;
+    /* display: column;
+    flex-direction: row; */
     transition: var(--transition);
     position: relative;
     overflow: hidden;
   }
+  .experience-header h3 {
+   font-size: 1rem;
+  }
+    .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    
+  }
+  .date{
+
+    padding:0.3rem;
+    font-size:0.9rem
+
+  }
+  .experience-container{
+    width:95vw !important;
+  }
+
  .about-image img {
     width: 90%;
     border-radius: 0.5rem;
@@ -433,13 +527,13 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: 5%;
  }
   .about-text p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
     color: #d3d4d5;
-    padding: 0 2rem;
+    padding: 1rem;
   }
  .education{
     color: white;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-size: 20px;
     margin-left: 5%;
  }
@@ -476,10 +570,21 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
      cursor: none;
     display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin:4%;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin:4%;
+    }
+    .certification-card h3 {
+    margin-bottom: 0.5rem;
+    color: #d5d5d5;
+    font-size: 1.1rem;
+    }
+    .certification-card p{
+    color: #60a5fa;
+    margin: 0;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
     }
 
       /* Hero social SVG styles are already defined above */
@@ -576,6 +681,12 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
       
 
-
-    }
-
+      .contact-content p {
+    color: #d7dce3;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+     }
+     footer p{
+      font-size: 0.9rem;
+     }
+}
