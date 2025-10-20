@@ -451,6 +451,10 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
     margin-left: 5%;
   }
+          section-header h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    }
   .project-card img {
     width: 100%;
     height: 12rem;
@@ -571,10 +575,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         background: radial-gradient(circle, #ff4081, #ff4081);
       }
       
-      section-header h2 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    }
+
 
     }
 
