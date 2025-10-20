@@ -1056,50 +1056,56 @@ background-image: linear-gradient(to right top, #a4a792, #8a8373, #6d6259, #4e43
   transition: all 0.1s ease;
   box-shadow: 0 0 10px rgba(255, 64, 129, 0.3);
 }
-
 .cursor-trail:nth-child(2) {
+  background: rgba(255, 64, 129, 0.6);
+  width: 16px;
+  height: 16px;
+  box-shadow: 0 0 6px rgba(255, 64, 129, 0.2);
+}
+
+.cursor-trail:nth-child(3) {
   background: rgba(2, 136, 209, 0.7);
   width: 14px;
   height: 14px;
   box-shadow: 0 0 8px rgba(2, 136, 209, 0.3);
 }
 
-.cursor-trail:nth-child(3) {
+.cursor-trail:nth-child(4) {
   background: rgba(255, 64, 129, 0.6);
   width: 12px;
   height: 12px;
   box-shadow: 0 0 6px rgba(255, 64, 129, 0.2);
 }
 
-.cursor-trail:nth-child(4) {
+.cursor-trail:nth-child(5) {
   background: rgba(2, 136, 209, 0.5);
   width:10px;
   height: 10px;
   box-shadow: 0 0 4px rgba(2, 136, 209, 0.2);
 }
 
-.cursor-trail:nth-child(5) {
+.cursor-trail:nth-child(6) {
   background: rgba(255, 64, 129, 0.4);
   width: 8px;
   height: 8px;
   box-shadow: 0 0 3px rgba(255, 64, 129, 0.1);
 }
 
-.cursor-trail:nth-child(6) {
+.cursor-trail:nth-child(7) {
   background: rgba(2, 136, 209, 0.3);
   width: 6px;
   height: 6px;
   box-shadow: 0 0 2px rgba(2, 136, 209, 0.1);
 }
 
-.cursor-trail:nth-child(7) {
+.cursor-trail:nth-child(8) {
   background: rgba(255, 64, 129, 0.2);
   width: 4px;
   height: 4px;
   box-shadow: 0 0 1px rgba(255, 64, 129, 0.1);
 }
 
-.cursor-trail:nth-child(8) {
+.cursor-trail:nth-child(9) {
   background: rgba(2, 136, 209, 0.15);
   width: 2px;
   height: 2px;
