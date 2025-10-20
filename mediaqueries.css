@@ -68,6 +68,9 @@ html {
         margin: -50px 50px;
         padding: 0 1.5rem;
     }
+    section {
+    padding: 5rem 0;
+}
     /* .menu-icon::before,*/
     /* .menu-icon::after,  */
     .menu-icon span {
