@@ -84,7 +84,7 @@ html {
     scroll-behavior: smooth;
   }
     
-  .cursor {
+  /* .cursor {
   position: fixed;
   width: 35px;
   height: 35px;
@@ -97,7 +97,7 @@ html {
   transition: transform 0.1s ease;
   box-shadow: 0 0 20px rgba(255, 64, 129, 0.5);
 }
-    
+     */
     .menu-icon {
         display: block; /* Ensure the hamburger icon is visible */
         font-size: 24px;
@@ -595,7 +595,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
     }
 
-    .cursor {
+    /* .cursor {
         position: fixed;
         width: 35px;
         height: 35px;
@@ -608,8 +608,8 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.1s ease;
         box-shadow: 0 0 20px rgba(255, 64, 129, 0.5);
       }
-      
-      .cursor-trail {
+       */
+      /* .cursor-trail {
         position: fixed;
         width: 16px;
         height: 16px;
@@ -669,7 +669,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 2px;
         height: 2px;
         box-shadow: 0 0 1px rgba(2, 136, 209, 0.05);
-      }
+      } */
       
       /* Cursor hover effects */
       a:hover ~ .cursor,
