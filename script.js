@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Menu functionality
     const menuIcon = document.querySelector(".menu-icon");
     const navLinks = document.querySelector(".nav-links");
 
     menuIcon.addEventListener("click", () => {
-                navLinks.classList.toggle("show");
+        navLinks.classList.toggle("show");
         menuIcon.classList.toggle("open"); // Toggle the 'open' class for the "X" effect
     });
+
 });
 
 // Parallax effect for hero, skills, and experience background
