@@ -23,7 +23,7 @@
       let mousePositions = [];
       const maxPositions = 20; // Number of positions to store
       
-      // Track mouse movement
+      // Track mouse movement 
       document.addEventListener('mousemove', function(e) {
         // Add current position to the array
         mousePositions.push({ x: e.clientX, y: e.clientY });
@@ -74,6 +74,7 @@
       });
     });
   </script>
+  
 
 </head>
 <body>
@@ -88,17 +89,30 @@
   <div class="cursor-trail"></div>
   <div class="cursor-trail"></div>
   
+  <!-- <div class="floating-pill">
+    <a href="#projects" class="pill-btn pill-light">Explore</a>
+    <a href="#contact" class="pill-btn pill-dark">Contact</a>
+  </div> -->
+  <div class="pill-navbar" id="pillNavbar" data-aos="fade-zoom-in"
+  data-aos-easing="ease-in-back"
+  data-aos-delay="300"
+  data-aos-offset="0">
+    <button class="active" data-target="explore">Explore</button>
+    <button data-target="contact">Contact</button>
+  </div>
   
-  <!-- <nav class="navbar">
+  <div class="explore-menu" id="exploreMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+  </div>
+  
+  
+  <nav class="navbar">
     <div class="nav-container">
       <div class="nav-content">
-        <div  data-aos="flip-up">
-        <a href="#" class="logo">Joswa A</a></div>
-        <div class="menu-icon" id="menuIcon">
-          <span></span>
-  <span></span>
-  <span></span>
-        </div>
         <div data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
@@ -112,7 +126,19 @@
         </div>
       </div>
     </div>
-  </nav> -->
+    </nav>
+    <nav class="navbar2">
+    <div class="nav-container2">
+      <div class="nav-content2">
+      <div data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"class="nav-links" id="navLinks">
+        <a href="#about">Joswa A</a>
+      </div>
+    </div>
+  </nav>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -785,31 +811,69 @@
         navbar.classList.remove('scrolled');
       }
     });
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar2');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
   
   </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pillNavbar = document.getElementById("pillNavbar");
+    const exploreMenu = document.getElementById("exploreMenu");
+    const exploreBtn = pillNavbar.querySelector('[data-target="explore"]');
+    const contactBtn = pillNavbar.querySelector('[data-target="contact"]');
+
+    if (!pillNavbar || !exploreMenu) return;
+
+    const closeSuggestions = () => {
+    exploreMenu.classList.remove("show");
+    exploreBtn.classList.remove("active");
+  };
+    // Toggle Explore menu
+    exploreBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); // prevent outside click
+      const isOpen = exploreMenu.classList.contains("show");
+
+      exploreMenu.classList.toggle("show", !isOpen);
+      exploreBtn.classList.add("active");
+      contactBtn.classList.remove("active");
+    });
+
+    // Contact click
+    contactBtn.addEventListener("click", () => {
+      exploreMenu.classList.remove("show");
+      contactBtn.classList.add("active");
+      exploreBtn.classList.remove("active");
+
+      document.getElementById("contact")
+        ?.scrollIntoView({ behavior: "smooth" });
+    });
+
+  
+    // Prevent menu click from closing itself
+    exploreMenu.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", () => {
+      exploreMenu.classList.remove("show");
+    });
+
+    
+  });
+</script>
+
+
+    
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
