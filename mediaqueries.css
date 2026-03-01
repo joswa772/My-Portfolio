@@ -288,7 +288,7 @@ html {
       min-height: 100vh;
       background-size: contain;
       background-position: center;
-      background-image: url(assests/joswa\ pic.jpg);  
+      background-image: url(assests/joswa\ pic.webp);  
   }
   
   .skill-card {
@@ -536,7 +536,7 @@ letter-spacing: 0.5px;
       min-height: 120vh;
       background-size: cover;
       background-position: center;
-      background-image: url(assests/joswa\ pic.jpg);
+      background-image: url(assests/joswa\ pic.webp);
       
 }
 
