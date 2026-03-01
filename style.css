@@ -222,7 +222,7 @@ color: white;
   min-height: 110vh;
   display: flex;
   align-items: center;
-  background-image: url(assests/1000266947\ \(1\).jpg);
+  background-image: url(converted/1000266947\ \(1\).jpg);
    /* background: rgba(0, 0, 0, 0.3);  */
   background-size: auto;
   background-position: left center;
@@ -515,7 +515,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 /* Experience Section */
 .experience{
   /* background-image: linear-gradient(to left top, #a4a792, #8a8373, #6d6259, #4e4340, #2e2828, #211d1d, #141212, #000000, #000000, #000000, #000000, #000000),
-    url(assests/1000266947\ \(1\).jpg);
+    url(converted/1000266947\ \(1\).jpg);
   background-size: cover, cover;
   background-position: left center;
   background-repeat: no-repeatt;
@@ -523,7 +523,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   will-change: background-position; */
   display: flex;
   align-items: center;
-  background-image: url(assests/1000266947\ \(1\).jpg);
+  background-image: url(converted/1000266947\ \(1\).jpg);
  /* background: rgba(0, 0, 0, 0.3);  */
   background-size: auto;
   background-position: center;
